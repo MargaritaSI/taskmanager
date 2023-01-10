@@ -16,10 +16,13 @@
       </a>
 
       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-dark text-decoration-none" href="/">Main page</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="/about-us">About</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'home' %}">Main page</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'about' %}">About</a>
       </nav>
     </div>
+
+    <div class="container">
     {% block content %}{% endblock %}
+    </div>
 </body>
 </html>
