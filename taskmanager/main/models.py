@@ -7,3 +7,7 @@ class Task(models.Model):
 
     def __str__(self): #call this method when we try to show on screen object of this class
         return self.title
+
+    class Meta:
+        verbose_name = 'Task'
+        verbose_name_plural = 'Tasks'
